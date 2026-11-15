@@ -37,6 +37,7 @@ const closeBtn = document.querySelector('.button__popup-close');
 if (openBtn && popup) {
   openBtn.addEventListener('click', (e) => {
     e.preventDefault();
+    e.stopPropagation();
     popup.showModal();
   });
 }
@@ -44,6 +45,7 @@ if (openBtn && popup) {
 if (closeBtn && popup) {
   closeBtn.addEventListener('click', (e) => {
     e.preventDefault();
+    e.stopPropagation();
     popup.close();
   });
 }
