@@ -247,27 +247,26 @@
           </article>
         </li>
       </ul>
-      
-      <button class="button__popup-open button" type="button" onclick="window['popup-id'].showModal()" aria-controls="popup-id">
-        <svg width="21" height="21" viewBox="0 0 40 40" class="icon-floppy" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <use href="svg/floppy.svg#floppy" />
+      <footer class="footer">
+          <button class="button save-button" type="button" onclick="window['dialog'].showModal()" aria-controls="dialog"> 
+            <svg class="floppy">
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <span class="button__text">
+              Сохранить на память
+            </span>
+          </button>
+      </footer>
+      <dialog id="dialog" class="modal">
+        <svg class="floppy floppy--modal">
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-
-      <dialog id="popup-id" class="popup">
-        <div class="popup__text-open">
-          <svg class="floppy" width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use href="svg/floppy.svg#floppy" />
-          </svg>
-          <p class="text__popup">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <button class="button__popup-close button" type="button" onclick="window['popup-id'].close()" aria-controls="popup-id">
-          <span class="button__text">ок</span>
+        <h2 class="modal__title">Вставьте дискету, чтобы продолжить</h2>
+        <button type="button" class="button save-button modal__button" onclick="window['dialog'].close()">
+          <span class="button__text">Ок</span>          
         </button>
       </dialog>
     </main>
-
     <script src="./scripts/like.js"></script>
   </body>
 </html>
