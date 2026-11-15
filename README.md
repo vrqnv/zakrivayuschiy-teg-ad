@@ -1,1 +1,1 @@
-https://vrqnv.github.io/zakrivayuschiy-teg-ad
+https://github.com/vrqnv/zakrivayuschiy-teg-ad
