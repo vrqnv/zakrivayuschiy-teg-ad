@@ -1,16 +1,27 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-font: "inter-Variable", sans-serif;
-    --accent-font: "PresStart2P", sans-serif;
-    --font-weight-bold: 700;
-    --font-weight-regular: 400;
-    --themes-background: #FFFFFF;
-    --themes-main-color: #000000;
-    --background-color: repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px ),
-    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-    --heart-contour: black;
-    --heart-main-body:#FF0000;
-    --heart-core:white;
-    --heart-sparks: #FF0000;
+  --main-font: 'Inter-Variable';
+  --accent-font: 'Press Start 2P';
+  --accent-color: black;
+  --font-weight__card-title: 700;
+  --font-weight__card-text: 400;
+  --text-stroke: rgba(255, 255, 255, 0.6);
+  --contour-color: black;
+  --animation-fill-color: red;
+  --body-background-img:
+    repeating-linear-gradient(
+      -90deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7, #1a1a1a);
 }
