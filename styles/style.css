@@ -11,292 +11,297 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-  font-family: var(--main-font, sans-serif);
-  font-variation-settings: 'wght' var(--font-weight__card-text, 400);
-  background-image: var(--body-background-img);
-  background-size:
-    4px 4px,
-    4px 4px,
-    100% 100%;
-  background-attachment: fixed;
+	min-inline-size: 320px;
+	min-block-size: 100dvb;
+	font-family: var(--main-font, sans-serif);
+	font-variation-settings: 'wght' var(--font-weight__card-text, 400);
+	background-image: var(--body-background-img);
+	background-size:
+		4px 4px,
+		4px 4px,
+		100% 960px;
+	background-repeat: repeat, repeat, no-repeat;
+	background-position:
+		top left,
+		top left,
+		top center;
+	background-color: var(--themes-background, #ffffff);
 }
 
 .header {
-  inline-size: clamp(375px, 260.5634px + 30.5164vw, 700px);
-  border: 2px solid var(--accent-color, black);
-  background-color: white;
-  margin: 100px auto;
+	inline-size: clamp(375px, 260.5634px + 30.5164vw, 700px);
+	border: 2px solid var(--accent-color, black);
+	background-color: white;
+	margin: 100px auto;
 }
 
 .header__logo {
-  font-family: var(--accent-font, sans-serif);
-  text-align: center;
-  text-transform: uppercase;
-  padding-inline: clamp(14px, -23.3239px + 9.9531vw, 120px);
-  padding-block: clamp(120px, 117.1831px + 0.7512vw, 128px);
+	font-family: var(--accent-font, sans-serif);
+	text-align: center;
+	text-transform: uppercase;
+	padding-inline: clamp(14px, -23.3239px + 9.9531vw, 120px);
+	padding-block: clamp(120px, 117.1831px + 0.7512vw, 128px);
 }
 
 .header__logo h1 {
-  font-size: clamp(49px, 43.3662px + 1.5023vw, 65px);
-  margin-block-end: 20px;
+	font-size: clamp(49px, 43.3662px + 1.5023vw, 65px);
+	margin-block-end: 20px;
 }
 
 .header__logo p {
-  font-size: clamp(14px, 10.831px + 0.8451vw, 23px);
+	font-size: clamp(14px, 10.831px + 0.8451vw, 23px);
 }
 
 .card {
-  inline-size: clamp(375px, 260.5634px + 30.5164vw, 700px);
-  border: 2px solid var(--accent-color, black);
-  background-color: white;
-  margin: 0 auto 50px;
+	inline-size: clamp(375px, 260.5634px + 30.5164vw, 700px);
+	border: 2px solid var(--accent-color, black);
+	background-color: white;
+	margin: 0 auto 50px;
 }
 
 .card__title {
-  font-size: 18px;
-  font-variation-settings: 'wght' var(--font-weight__card-title, 700);
-  margin: 3px 10px;
+	font-size: 18px;
+	font-variation-settings: 'wght' var(--font-weight__card-title, 700);
+	margin: 3px 10px;
 }
 
 .card__img-wrapper {
-  position: relative;
-  border-top: 2px solid var(--accent-color, black);
-  border-bottom: 2px solid var(--accent-color, black);
-  overflow: hidden;
+	position: relative;
+	border-top: 2px solid var(--accent-color, black);
+	border-bottom: 2px solid var(--accent-color, black);
+	overflow: hidden;
 }
 
 .card__img-label {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-family: var(--accent-font, sans-serif);
-  font-size: 14px;
-  text-transform: uppercase;
-  mix-blend-mode: hard-light;
-  text-shadow:
-    -1px 0 var(--text-stroke, white),
-    0 1px var(--text-stroke, white),
-    1px 0 var(--text-stroke, white),
-    0 -1px var(--text-stroke, white);
-  z-index: 2;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	font-family: var(--accent-font, sans-serif);
+	font-size: 14px;
+	text-transform: uppercase;
+	mix-blend-mode: hard-light;
+	text-shadow:
+		-1px 0 var(--text-stroke, white),
+		0 1px var(--text-stroke, white),
+		1px 0 var(--text-stroke, white),
+		0 -1px var(--text-stroke, white);
+	z-index: 2;
 }
 
 .card__img {
-  position: relative;
-  height: clamp(375px, 260.5634px + 30.5164vw, 700px);
-  object-view-box: inset(0% 0% 0% 32%);
+	position: relative;
+	height: clamp(375px, 260.5634px + 30.5164vw, 700px);
+	object-view-box: inset(0% 0% 0% 32%);
 }
 
 .card:nth-child(2) .card__img {
-  filter: saturate(30%);
+	filter: saturate(30%);
 }
 
 .card:nth-child(3) .card__img {
-  filter: saturate(450%);
+	filter: saturate(450%);
 }
 
 .card:nth-child(4) .card__img {
-  filter: hue-rotate(30deg);
+	filter: hue-rotate(30deg);
 }
 
 .card:nth-child(5) .card__img {
-  filter: invert(80%);
+	filter: invert(80%);
 }
 
 .card:nth-child(6) .card__img {
-  filter: sepia(90%);
+	filter: sepia(90%);
 }
 
 .card:nth-child(7) .card__img {
-  filter: blur(15px);
+	filter: blur(15px);
 }
 
 .card:nth-child(8) .card__img {
-  filter: hue-rotate(80deg) blur(1px);
+	filter: hue-rotate(80deg) blur(1px);
 }
 
 .card__text {
-  font-size: 18px;
-  margin: 25px;
+	font-size: 18px;
+	margin: 25px;
 }
 
 .card__text p:not(:last-of-type) {
-  margin-block-end: 27px;
+	margin-block-end: 27px;
 }
 
 .card__buttons {
-  display: flex;
-  justify-content: end;
-  gap: 5px;
-  margin: 25px;
+	display: flex;
+	justify-content: end;
+	gap: 5px;
+	margin: 25px;
 }
 
 .card__icon-button {
-  border: 2px solid transparent;
-  padding: 0;
+	border: 2px solid transparent;
+	padding: 0;
 }
 
 .card__icon-button:focus-visible {
-  outline: none;
-  border: 2px solid var(--accent-color, black);
+	outline: none;
+	border: 2px solid var(--accent-color, black);
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--animation-fill-color, red);
-  transition: fill 0.3s 0.06s;
+	fill: var(--animation-fill-color, red);
+	transition: fill 0.3s 0.06s;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--animation-fill-color, red);
+	fill: var(--animation-fill-color, red);
 }
 
 .like-icon.is-liked .core {
-  fill: var(--animation-fill-color, red);
+	fill: var(--animation-fill-color, red);
 }
 
 .like-icon {
-  display: block;
-  width: 40px;
+	display: block;
+	width: 40px;
 }
 
 .like-icon .sparks {
-  opacity: 0;
+	opacity: 0;
 }
 
 .card__like-button {
-  position: relative;
-  inline-size: 130px;
-  block-size: 38px;
-  transition: box-shadow 0.3s ease;
+	position: relative;
+	inline-size: 130px;
+	block-size: 38px;
+	transition: box-shadow 0.3s ease;
 }
 
 .card__like-button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0 var(--accent-color, black);
+	outline: none;
+	box-shadow: 2px 2px 0 var(--accent-color, black);
 }
 
 .button__text {
-  position: relative;
-  color: white;
-  mix-blend-mode: difference;
-  z-index: 3;
+	position: relative;
+	color: white;
+	mix-blend-mode: difference;
+	z-index: 3;
 }
 
 .save-button {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-  inline-size: clamp(306px, 295.7887px + 2.723vw, 335px);
-  background-color: white;
-  margin: 0 auto 100px;
-  padding: 15px 19px;
-  transition: box-shadow 0.3s ease;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	align-items: center;
+	inline-size: clamp(306px, 295.7887px + 2.723vw, 335px);
+	background-color: white;
+	margin: 0 auto 100px;
+	padding: 15px 19px;
+	transition: box-shadow 0.3s ease;
 }
 
 .save-button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0 var(--accent-color, black);
+	outline: none;
+	box-shadow: 2px 2px 0 var(--accent-color, black);
 }
 
 .save-button__icon {
-  width: clamp(21px, 30.4648px + -0.6573vw, 28px);
-  height: clamp(21px, 30.4648px + -0.6573vw, 28px);
-  fill: white;
-  mix-blend-mode: difference;
-  z-index: 3;
+	width: clamp(21px, 30.4648px + -0.6573vw, 28px);
+	height: clamp(21px, 30.4648px + -0.6573vw, 28px);
+	fill: white;
+	mix-blend-mode: difference;
+	z-index: 3;
 }
 
 .save-button__text {
-  position: relative;
-  min-inline-size: 266px;
-  color: white;
-  mix-blend-mode: difference;
-  z-index: 3;
+	position: relative;
+	min-inline-size: 266px;
+	color: white;
+	mix-blend-mode: difference;
+	z-index: 3;
 }
 
 .save-dialog {
-  inline-size: clamp(341px, 336.7746px + 1.1268vw, 353px);
-  border: 2px solid var(--accent-color, black);
-  padding: 30px clamp(30px, 46.2254px + -1.1268vw, 42px);
-  overflow: hidden;
+	inline-size: clamp(341px, 336.7746px + 1.1268vw, 353px);
+	border: 2px solid var(--accent-color, black);
+	padding: 30px clamp(30px, 46.2254px + -1.1268vw, 42px);
+	overflow: hidden;
 }
 
 .save-dialog[open] {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  gap: 30px 20px;
-  align-items: center;
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	gap: 30px 20px;
+	align-items: center;
 }
 
 .save-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .dialog__img {
-  width: 39px;
-  height: 39px;
+	width: 39px;
+	height: 39px;
 }
 
 .dialog__text {
-  font-family: var(--accent-font, sans-serif);
-  font-size: 14px;
-  line-height: 150%;
-  font-weight: normal;
-  text-transform: uppercase;
-  min-width: 198px;
+	font-family: var(--accent-font, sans-serif);
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: normal;
+	text-transform: uppercase;
+	min-width: 198px;
 }
 
 .save-dialog .dialog__form {
-  grid-column: 1 / -1;
+	grid-column: 1 / -1;
 }
 
 .dialog__btn {
-  position: relative;
-  inline-size: 100%;
-  padding-block: 13px;
-  transition: box-shadow 0.3s ease;
+	position: relative;
+	inline-size: 100%;
+	padding-block: 13px;
+	transition: box-shadow 0.3s ease;
 }
 
 .dialog__btn-text {
-  position: relative;
-  color: white;
-  mix-blend-mode: difference;
-  z-index: 3;
+	position: relative;
+	color: white;
+	mix-blend-mode: difference;
+	z-index: 3;
 }
 
 .dialog__btn:focus {
-  outline: none;
-  box-shadow: 2px 2px 0 var(--accent-color, black);
+	outline: none;
+	box-shadow: 2px 2px 0 var(--accent-color, black);
 }
 
 .slide-hover::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: var(--accent-color, black);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-color: var(--accent-color, black);
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.5s ease-in-out;
 }
 
 .slide-hover:hover::after {
-  transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
-  .card__img-label {
-    -webkit-text-stroke: 1px var(--text-stroke, white);
-    text-stroke: 1px var(--text-stroke, white);
-    text-shadow: none;
-  }
+	.card__img-label {
+		-webkit-text-stroke: 1px var(--text-stroke, white);
+		text-stroke: 1px var(--text-stroke, white);
+		text-shadow: none;
+	}
 }
 
 @media (min-width: 1440px) {
-  .save-button {
-    flex-direction: row;
-  }
+	.save-button {
+		flex-direction: row;
+	}
 }
