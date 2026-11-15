@@ -1,7 +1,7 @@
 .page {
   font-family: var(--main-font), serif;
   background-image: var(--background-color);
-  background-size: 100% 960px; 
+  background-size: 100% 960px;
   background-repeat: no-repeat;
   background-position: top center;
   background-color: var(--themes-background, #ffffff);
@@ -92,7 +92,7 @@
   1px 0 var(--themes-background, #ffffff),
   0 -1px var(--themes-background, #ffffff);
   mix-blend-mode: hard-light;
-  opacity: 0.5; 
+  opacity: 0.5;
 }
 
 @supports (text-stroke: 1px var(--themes-background, #ffffff)) or
@@ -249,4 +249,36 @@
     top: 19px;
     right: 10px;
   }
+}
+
+.filter__blur {
+  filter: blur(3px);
+}
+
+.filter__brightness {
+  filter: brightness(130%);
+}
+
+.filter__contrast {
+  filter: contrast(150%);
+}
+
+.filter__sepia {
+  filter: sepia(0.5);
+}
+
+.filter__grayscale {
+  filter: grayscale(80%);
+}
+
+.filter__hue-rotate {
+  filter: hue-rotate(150deg);
+}
+
+.filter__invert {
+  filter: invert(90%);
+}
+
+.filter__mix {
+  filter: saturate(390%) contrast(190%) hue-rotate(200deg);
 }
